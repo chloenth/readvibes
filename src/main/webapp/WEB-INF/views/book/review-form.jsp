@@ -11,7 +11,7 @@
 					<li class="breadcrumb-item"><a href="${homePath}/${bookId}"
 						class="text-white">${bookTitle}</a></li>
 					<li class="breadcrumb-item active" aria-current="page"
-						class="text-white">${isUpdate ? 'Update' : 'Add'} Review</li>
+						class="text-white">${isUpdate ? 'Update' : 'Add'}Review</li>
 				</ol>
 			</nav>
 
@@ -21,10 +21,16 @@
 
 	<div class="row justify-content-center">
 		<div class="col-md-6 mt-5 p-5 border border-white custom-shadow">
-			<h2 class="mb-5 text-center">${isUpdate ? 'Update Your' : 'Add New'} Review</h2>
+			<h2 class="mb-5 text-center">${isUpdate ? 'Update Your' : 'Add New'}
+				Review</h2>
 
-			<form:form action="${isUpdate ? 'update-review' : 'add-review'}" method="POST"
-				modelAttribute="reviewFormDto">
+			<form:form action="${isUpdate ? 'update-review' : 'add-review'}"
+				method="POST" modelAttribute="reviewFormDto">
+				
+				<c:if test="${isUpdate}">
+					<input type="hidden" name="_method" value="PUT" />
+				</c:if>
+				
 				<div class="mb-5">
 					<form:label path="content" class="form-label">Review Content</form:label>
 					<form:textarea path="content" class="form-control" rows="5"></form:textarea>
@@ -55,7 +61,8 @@
 					</p>
 
 					<!-- Hidden input to store the selected star rating -->
-					<form:input type="hidden" id="rating" path="rating" value="${rating}" class="form-control" />
+					<form:input type="hidden" id="rating" path="rating"
+						value="${rating}" class="form-control" />
 
 				</div>
 

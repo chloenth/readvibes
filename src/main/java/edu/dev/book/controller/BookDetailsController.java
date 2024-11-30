@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -113,7 +114,7 @@ public class BookDetailsController {
 		return "book/review-form";
 	}
 
-	@PostMapping("{reviewId}/update-review")
+	@PutMapping("{reviewId}/update-review")
 	public String updateReview(@Valid @ModelAttribute("reviewFormDto") ReviewFormDto reviewFormDto,
 			BindingResult bindingResult, @PathVariable String reviewId, @PathVariable String bookId, Model model) {
 
