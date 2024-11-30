@@ -1,0 +1,64 @@
+# Maven / Gradle build directories
+/target/
+build/
+out/
+
+# Eclipse-specific files
+*.class
+*.log
+*.war
+*.ear
+.settings/
+/.metadata/
+/.recommenders/
+/.remote-sync.json
+.classpath
+.project
+/.factorypath
+
+# IntelliJ IDEA-specific files
+/.idea/
+/*.iml
+*.ipr
+*.iws
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database credentials or config files (if applicable)
+application.properties
+application.yml
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Test reports
+/test-output/
+/surefire-reports/
+/test-results/
+
+# IDE-specific files (optional)
+.vscode/
+*.code-workspace
+
+# SQL Server related files (if any scripts are generated)
+*.bak
+*.mdf
+*.ldf
+
+# Node.js (if using frontend frameworks)
+node_modules/
+
+# Operating System generated files
+Thumbs.db
+.DS_Store
+
+# Miscellaneous
+*.env
