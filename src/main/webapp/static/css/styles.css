@@ -1,0 +1,39 @@
+.card {
+	box-shadow: 0 .3rem 0.3rem rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumb-white {
+	--bs-breadcrumb-divider: '>';
+	color: white; /* Ensures the text is white */
+}
+
+.breadcrumb-white .breadcrumb-item+.breadcrumb-item::before {
+	color: white; /* Makes the divider white */
+}
+
+.breadcrumb .breadcrumb-item.active {
+	color: #CCCCCC; /* Light gray */
+}
+
+.custom-shadow {
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+	/* White shadow with some opacity */
+}
+
+.stars {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.star-button {
+	background: none;
+	border: none;
+	font-size: 2rem;
+	color: lightgray;
+	cursor: pointer;
+}
+
+.star-button.active {
+	color: gold;
+}
