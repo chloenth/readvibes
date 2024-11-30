@@ -50,9 +50,10 @@ cd readvibes
 3. Configure the database connection in the `application.properties` file. Open the `application.properties` file in the `src/main/resources` directory and update it with the following settings:
 
 ```properties
-spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=readvibes_db
-spring.datasource.username=your-username
-spring.datasource.password=your-password
+db.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+db.url=jdbc:sqlserver://localhost:1433;databaseName=readvibes_db
+db.username=your-username
+db.password=your-password
 spring.jpa.hibernate.ddl-auto=update
 ```
 
