@@ -72,16 +72,16 @@ Start your server and access the application at `http://localhost:8080/ReadVibes
 
 ## API Endpoints
 
-| **Endpoint**                 | **Method** | **Description**                                    |
-| ---------------------------- | ---------- | -------------------------------------------------- |
-| `/books?sort?page`           | GET        | Fetch all books (and sort - optional) (paginated). |
-| `/books?search?sort?page`    | GET        | Search books (and sort - optional) (paginated).    |
-| `/books?filter?sort?page`    | GET        | Filter books (and sort - optional) (paginated).    |
-| `/books/{id}`                | GET        | Fetch book details and reviews.                    |
-| `/books/{id}/add-review`     | POST       | Add a new review.                                  |
-| `/books/{id}/update-review}` | PUT        | Update an existing review.                         |
-| `/login`                     | POST       | Log in a user                                      |
-| `/register`                  | POST       | Register a new user                                |
+| **Endpoint**                | **Method** | **Description**                                    |
+| --------------------------- | ---------- | -------------------------------------------------- |
+| `/books?sort?page`          | GET        | Fetch all books (and sort - optional) (paginated). |
+| `/books?search?sort?page`   | GET        | Search books (and sort - optional) (paginated).    |
+| `/books?filter?sort?page`   | GET        | Filter books (and sort - optional) (paginated).    |
+| `/books/{id}`               | GET        | Fetch book details and reviews.                    |
+| `/books/{id}/add-review`    | POST       | Add a new review.                                  |
+| `/books/{id}/update-review` | PUT        | Update an existing review.                         |
+| `/login`                    | POST       | Log in a user                                      |
+| `/register`                 | POST       | Register a new user                                |
 
 ## How bcrypt is implemented for password hashing:
 
